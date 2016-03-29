@@ -4,7 +4,8 @@ body {
 
 .hover-card {
   position: absolute;
-  background-color: gray; }
+  background-color: rgba(255, 255, 255, 0.3);
+  opacity: 0; }
 
 h3 {
   font-size: 3em; }
@@ -12,6 +13,8 @@ h3 {
 img {
   float: left;
   position: relative; }
+  img:hover ~ .hover-card {
+    opacity: 1; }
 
 img {
   width: 25%; }
