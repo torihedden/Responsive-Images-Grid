@@ -1,0 +1,32 @@
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 1em; }
+
+.hover-card {
+  position: absolute;
+  background-color: gray; }
+
+h3 {
+  font-size: 3em; }
+
+img {
+  float: left;
+  position: relative; }
+
+img {
+  width: 25%; }
+
+@media (max-width: 950px) {
+  img {
+    width: 33.33333%; } }
+@media (max-width: 650px) {
+  img {
+    width: 50%; } }
+@media (max-width: 450px) {
+  img {
+    width: 100%; } }
+.attribution {
+  text-align: center;
+  padding: 10px; }
+
+/*# sourceMappingURL=styles.css.map */
