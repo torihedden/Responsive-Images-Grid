@@ -2,13 +2,19 @@ body {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 1em; }
 
+.card {
+  position: relative;
+  z-index: 1; }
+
 .hover-card {
   position: absolute;
+  z-index: 3;
   background-color: rgba(255, 255, 255, 0.3);
   opacity: 0; }
 
 h3 {
-  font-size: 3em; }
+  font-size: 3em;
+  position: absolute; }
 
 img {
   float: left;

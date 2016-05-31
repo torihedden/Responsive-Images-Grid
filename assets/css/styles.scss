@@ -1,0 +1,61 @@
+body {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+}
+
+.hover-card {
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(255,255,255,0.3);
+  opacity: 0;
+}
+
+
+h3 {
+  font-size: 3em;
+  position: absolute;
+}
+
+
+img {
+  float: left;
+  position: relative;
+  &:hover ~ .hover-card {
+    opacity: 1;
+  }
+}
+
+//change this block to a media query
+//try setting media queries as percentage of whole device screen width
+img {
+  width: (100%/4);
+}
+
+@media (max-width: 950px){
+  img {
+    width: (100%/3);
+  }
+}
+
+@media (max-width: 650px){
+  img {
+    width: (100%/2);
+  }
+}
+
+@media (max-width: 450px){
+  img {
+    width: (100%/1);
+  }
+}
+
+
+.attribution {
+  text-align: center;
+  padding: 10px;
+}
